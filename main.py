@@ -14,6 +14,7 @@ def main():
                 return
         screen.fill("black")
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
         # returns the amount of time that has passed since the last time it was called in seconds
         dt = clock.tick(60) / 1000
